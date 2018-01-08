@@ -1,4 +1,4 @@
-{% load blog_tags keyword_tags mezzanine_tags i18n %}
+{% load blog_tags keyword_tags mezzanine_tags i18n staticfiles %}
 
 {% block blog_categories %}
 {% blog_categories as categories %}
@@ -49,5 +49,20 @@
 {% endif %}
 {% endblock %}
 
-<!-- TODO Rajouter block adsense ici -->
+<h3>Ebook Arduino</h3>
+<a href="ebook-tutoriel-arduino/">Téléchargez l'ebook Arduino !</a>
+<a href="ebook-tutoriel-arduino/"><img src="{% static "img/couverture-212x300.png" %}"></a>
+
+<h3>Pub!</h3>
+<p class="publicwrapper" style="background-image: url('{% static "img/message.png" %}');">
+<!-- Blog side carree -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:250px;height:250px"
+     data-ad-client="ca-pub-2080155902357792"
+     data-ad-slot="6115810402"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
 <!-- TODO Rajouter block promo ebook ici -->
