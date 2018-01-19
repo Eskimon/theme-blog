@@ -46,3 +46,7 @@ Showing {{ start }} to {{ end }} of {{ total }} results in {{ search_type }} mat
 {% pagination_for results %}
 
 {% endblock %}
+
+{% block right_panel %}
+{% include "blog/includes/filter_panel.html" %}
+{% endblock %}
