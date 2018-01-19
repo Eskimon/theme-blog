@@ -27,24 +27,6 @@
 {% endif %}{% endif %}{% endif %}{% endif %}
 {% endblock %}
 
-{% block breadcrumb_menu %}
-{{ block.super }}
-{% if tag or category or year or month or author %}
-<li>{% spaceless %}
-{% if tag %}
-    {% trans "Tag:" %} {{ tag }}
-{% else %}{% if category %}
-    {% trans "Category:" %} {{ category }}
-{% else %}{% if year or month %}
-    {% if month %}{{ month }}, {% endif %}{{ year }}
-{% else %}{% if author %}
-    {% trans "Author:" %} {{ author.get_full_name|default:author.username }}
-{% endif %}{% endif %}{% endif %}{% endif %}
-{% endspaceless %}
-</li>
-{% endif %}
-{% endblock %}
-
 {% block main %}
 
 {% if tag or category or year or month or author %}
