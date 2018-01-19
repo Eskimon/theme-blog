@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n mezzanine_tags %}
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
@@ -10,9 +10,6 @@
 
 {% block main %}
 <h1>Hello world!</h1>
-{% ifinstalled mezzanine.twitter %}
-{% include "twitter/tweets.html" %}
-{% endifinstalled %}
 {% endblock %}
 
 {% block right_panel %}
